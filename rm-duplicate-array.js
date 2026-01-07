@@ -25,14 +25,16 @@ const eggScrambleRecipe = [
         ]
 
 function removeDupesFromArray(arr){
-    let trackDupes = {}
+    return [...new Set(arr)]
+
+  /*  let trackDupes = {}
     return arr.filter(item => {
         if (!trackDupes[item]) {
             trackDupes[item] = true
             return true
         }
         return false
-    })
+    })*/
     }
   /*  const uniqueItems = []; 
     
